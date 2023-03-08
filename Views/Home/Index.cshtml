@@ -27,6 +27,12 @@
                 <li>ISBN: @b.Isbn</li>
             </ul>
         </div>
+        <form method="post" asp-page="/Cart">
+            <input type="hidden" asp-for="@b.BookId"/>
+            <span class="card-text">
+                <button type="submit" class="btn btn-success btn-sm float-end">Add to Cart</button>
+            </span>
+        </form>
     </div>
 }
 
